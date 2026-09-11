@@ -25,6 +25,13 @@ int pop(Node* &head) {
     delete temp;
     return poppedValue;
 }
+int peek(Node* head) {
+    if (head == nullptr) {
+        cout << "Stack is empty!" << endl;
+        return -1; // or throw an exception
+    }
+    return head->data;
+}
 int main() {
     Node* head = nullptr;
     push(head, 1);
