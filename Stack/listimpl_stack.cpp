@@ -32,6 +32,14 @@ int peek(Node* head) {
     }
     return head->data;
 }
+void traverse(Node* head) {
+    Node* current = head;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->next;
+    }
+    cout << endl;
+}
 int main() {
     Node* head = nullptr;
     push(head, 1);
